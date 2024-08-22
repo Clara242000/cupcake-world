@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff66b2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cupcake-types {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cupcake-details {
+    background-color: #fff;
+    border: 3px solid #ff99cc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cupcake-details:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cupcake-details img {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #ff6699;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.cupcake-ingredients {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cupcake-ingredients li {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.extra-ingredients {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #888;
+}
